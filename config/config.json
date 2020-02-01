@@ -16,7 +16,7 @@
     "operatorsAliases": false
   },
   "production": {
-    "use_evu_variable ": "k2fqe1if4c7uowsh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "use_evu_variable ": "mysql://p2q7zjo1t73exot6:jt1w0djt0vr56cfo@k2fqe1if4c7uowsh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/tnvd923msikdxz4l",
     "dialect":"mysql"
   }
 }
