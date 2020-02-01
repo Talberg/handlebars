@@ -1,59 +1,64 @@
 
-  <div class=" center-txt bg-danger">
-    <div class="row">
-    <h1>Burgers!</h1></div>
+  <div class=" text-center bg-danger">
+    <div class="row text-warning   "></div>
+    <h1 class="text-warning pb-3 pt-2" >Burgers!</h1></div>
   </div>
-
+<div class="container ">
 <div class="row">
-  <div class="col-6">
-    <h2>Burgers that are not devoured!</h2>
+  <div class="col-4 offset-1 bg-warning mb-2 text-center">
+    <h2 class="text-center text-light rounded">Burgers</h2>
   </div>
-  <div class="col-6">
-    <h2>Burgers that are not devoured!</h2>
+  <div class="col-4 offset-1 text-center text-light bg-warning mb-2">
+    <h2 class="">Recipes</h2>
   </div>
 </div>
 <div class="row">
-  <div class="col-6"></div>
-
-
-  <div class="col-6"></div>
-</div>
-
-
-
-
-
-<ul>
+  <div class="col-4 offset-1 btn-danger"><ul>
   {{#each burgers}}
   {{#unless devoured}}
   {{> burgers/burger-block devoured=true}}
   {{/unless}}
   {{/each}}
-</ul>
+</ul></div>
 
-<h2>burgers that are devoured!</h2>
 
+  <div class="col-4 offset-1 btn-danger">
 <ul>
   {{#each burgers}}
   {{#if devoured}}
   {{> burgers/burger-block devoured=false}}
   {{/if}}
   {{/each}}
-</ul>
+</ul></div>
+</div>
 
+
+
+
+
+
+
+<div class="row bg-warning"><div class=" bg-warning col-3  offset-4">
+<h2 class="text-light text-center">Order</h2>
+</div>
+</div>
+<div class="row bg-warning"><div class="col-3 offset-3">
 <h2>Add a burger</h2>
-<form class="create-form">
+<form class="create-form ">
 
-  <div class="form-group">
-    <label for="ca">burger Name:</label>
+  <div class="form-group ">
+    <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="devoured">devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> devoured!<br>
-    <input type="radio" name="devoured" value="0">
+  <div class="form-group bg-danger">
+    <label class="text-light" for="devoured">Make a Burger or Create a Recipe</label><br>
+    <input class="text-light" type="radio" name="devoured" value="1" checked>Create Recipe<br>
+    <input class="text-light" type="radio" name="devoured" value="0"> Make Burger</input>
   </div>
 
-  <button type="submit">Add burger</button>
+  <button class="btn-danger" type="submit ">Add burger</button>
 </form>
+
+</div></div>
+</div>

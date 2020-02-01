@@ -1,8 +1,4 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-}
+
 
 .label {
   font-weight: bold;
@@ -11,12 +7,13 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: rgb(255, 0, 0);
+
 }
 
 .form-group {
   margin-bottom: 5px;
 }
-body {
-background-color: rgb(218, 24, 24);
+.rounded{
+  border-radius: 25px 25px ;
 }
+

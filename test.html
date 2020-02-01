@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		<title>Burgers</title>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/assets/js/burgers.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+	<body>
+		
+        <div class=" center-txt bg-danger">
+            <div class="row">
+            <h1>Burgers!</h1></div>
+          </div>
+        <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2>Burgers that are not devoured!</h2>
+          </div>
+          <div class="col-6">
+            <h2>Burgers that are not devoured!</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6"></div>
+        
+        
+          <div class="col-6"></div>
+        </div>
+        
+        
+        
+        
+        
+        <ul>
+            <li>
+                {{name}}
+                
+            
+                <button class="change-devoured btn" data-id="{{id}}" data-devoured="{{devoured}}">
+                    {{#if devoured}}DEVOUR!{{else}}REMAKE{{/if}}
+                </button>
+            
+                <button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+            </li>
+            
+        </ul>
+        
+        <h2>burgers that are devoured!</h2>
+        
+        <ul>
+            <li>
+                {{name}}
+                
+            
+                <button class="change-devoured btn" data-id="{{id}}" data-devoured="{{devoured}}">
+                    {{#if devoured}}DEVOUR!{{else}}REMAKE{{/if}}
+                </button>
+            
+                <button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+            </li>
+            
+        </ul>
+        
+        <h2>Add a burger</h2>
+        <form class="create-form">
+        
+          <div class="form-group">
+            <label for="ca">burger Name:</label>
+            <input type="text" id="ca" name="name">
+          </div>
+        
+          <div class="form-group">
+            <label for="devoured">devoured?</label><br>
+            <input type="radio" name="devoured" value="1" checked> devoured!<br>
+            <input type="radio" name="devoured" value="0">
+          </div>
+        
+          <button type="submit">Add burger</button>
+        </form>
+    </div>
+	
+	</body>
+</html>

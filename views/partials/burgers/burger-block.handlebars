@@ -1,10 +1,10 @@
-<li>
+<li class=" p-2 text-light">
 	{{name}}
 	
 
-	<button class="change-devoured btn" data-id="{{id}}" data-devoured="{{devoured}}">
+	<button class="change-devoured btn-warning" data-id="{{id}}" data-devoured="{{devoured}}">
 		{{#if devoured}}DEVOUR!{{else}}REMAKE{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+	<button class="delete-burger btn-warning " data-id="{{this.id}}">DELETE!</button>
 </li>
