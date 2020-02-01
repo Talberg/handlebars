@@ -3,7 +3,9 @@
     "username": "root",
     "password": "Greblat2",
     "database": "burger_db",
-    "host": "127.0.0.1",
+
+    "host": "localhost",
+
     "dialect": "mysql",
     "operatorsAliases": false
   },
@@ -16,8 +18,9 @@
     "operatorsAliases": false
   },
   "production": {
-    "use_evu_variable ": "mysql://p2q7zjo1t73exot6:jt1w0djt0vr56cfo@k2fqe1if4c7uowsh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/tnvd923msikdxz4l",
+
+    "use_env_variable": "k2fqe1if4c7uowsh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect":"mysql"
-    
+
   }
 }
